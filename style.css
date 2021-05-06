@@ -4,14 +4,23 @@ body{
     background-size: 100% 100%;
     
 }
+
 .header{
-    height: 200px;
+    background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+    font-size: 2vw;
+    position: sticky;
+    top: 0;
+    height: 140px;
+    width: 100%;
     border-color: #be4f23;
     border-style: solid;
 }
 .Game{
     height:300vh;
     width: 100%;
+}
+.score_title{
+    position: absolute;
 }
 .row{
     
@@ -52,7 +61,8 @@ body{
 }
 #score{
     position: absolute;
-    margin: 40px;
+    margin: 10px 40px;
+    font-size: 30px;
     
 }
 .card{

@@ -95,6 +95,21 @@ for(let i = 0; i < cards.length; i++){
                     clicked_grid.style.cursor = "auto";
                     console.log(target.style);
                     console.log("here!!!!")
+                    var score = document.getElementById("score");
+                    
+                    console.log("current score:",score.innerHTML);
+                    console.log("current score type:",typeof score.innerHTML);
+                    var score_digit = score.innerHTML.match(/\d+/g)[0];
+                    console.log("score:",score_digit);
+                    if(score_digit == 0){
+                        setTimeout(()=>{alert("You Lose!!!"); document.location.reload()},100);
+                    }
+                    else{
+                        console.log(score_digit);
+                        score.innerHTML = "<b>"+((score_digit-1).toString())+"</b>";
+                        console.log(score.innerHTML);
+                    }
+                    
                     setTimeout(()=>{
                         target.style.backgroundColor = "grey";
                         clicked_grid.style.backgroundColor = "grey";
@@ -112,6 +127,7 @@ for(let i = 0; i < cards.length; i++){
                     clicked_grid.blockclick = true;
                     block_click = false;
                     clicked_grid = null;
+                    
                     
                 }
             }else{
