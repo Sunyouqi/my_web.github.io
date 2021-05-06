@@ -6,7 +6,7 @@ body{
 }
 .header{
     height: 200px;
-    border-color: red;
+    border-color: #be4f23;
     border-style: solid;
 }
 .Game{
@@ -58,11 +58,11 @@ body{
 .card{
     opacity: 1;
     position: relative;
-    background-color: rgba(238, 238, 238, 0.61);
+    background: rgba(238, 238, 238, 0.61);
     display:inline-block;
     height: 100px;
     width: 100px;
-    cursor: pointer;
+    cursor: auto;
 }
 
 
